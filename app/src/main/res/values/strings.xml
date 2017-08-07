@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GitHub explorer</string>
+    <string name="connection_error">Oops! something went wrong, please check your network connection</string>
+</resources>

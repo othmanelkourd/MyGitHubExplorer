@@ -1,0 +1,37 @@
+query GitHubRepo($number_of_repos:Int!, $user_name:String!){
+    user(login:$user_name){
+    name
+    avatarUrl
+    repositories(first:$number_of_repos, privacy:PUBLIC){
+    totalCount
+    nodes{
+    name
+    createdAt
+    updatedAt
+    url
+    description
+    descriptionHTML
+    watchers{
+    totalCount
+    }
+    forks{
+    totalCount
+    }
+    stargazers{
+    totalCount
+    }
+    issues{
+    totalCount
+    }
+    commitComments{
+    totalCount
+    }
+
+    primaryLanguage{
+    color
+    name
+    }
+    }
+    }
+    }
+    }
